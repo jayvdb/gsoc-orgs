@@ -17,3 +17,5 @@ exclude:
   - package.json
   - package-lock.json
   - node_modules
+postbuild:
+  - cp %{source}/_data/orgs.json %{dest}/orgs.json
